@@ -1,0 +1,14 @@
+# Clean URLs: send section paths to the matching anchor on the home page
+/home        /            301
+/courses     /#courses    301
+/why-corvit  /#why        301
+/campus-life /#campus     301
+/admissions  /#admissions 301
+/contact     /#contact    301
+/index.html  /            301
+
+# Fallback: any unknown path serves the single-page site
+# Keep Netlify Functions reachable
+/.netlify/functions/*  /.netlify/functions/:splat  200
+
+/*           /index.html  200
