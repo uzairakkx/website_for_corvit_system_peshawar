@@ -9,6 +9,4 @@
 
 # Fallback: any unknown path serves the single-page site
 # Keep Netlify Functions reachable
-/.netlify/functions/*  /.netlify/functions/:splat  200
-
 /*           /index.html  200
